@@ -1,8 +1,6 @@
 (function () {
   'use strict';
-  /* ─────────────────────────────────────────
-     1. LOADING SCREEN
-  ───────────────────────────────────────── */
+  /*1. LOADING SCREEN */
   var loadingScreen = document.getElementById('loading-screen');
   var mainSite      = document.getElementById('main-site');
   var skipBtn       = document.getElementById('skip-btn');
@@ -42,9 +40,7 @@
 window.openme = function () {
   window.open("https://demonslayer-anime.com/infinitycastle/", "_blank");
 };
-  /* ─────────────────────────────────────────
-     2. MOBILE NAV TOGGLE
-  ───────────────────────────────────────── */
+  /*2. MOBILE NAV TOGGLE */
   var navToggle = document.getElementById('nav-toggle');
   var mainNav   = document.getElementById('main-nav');
   navToggle.addEventListener('click', function () {
@@ -65,9 +61,7 @@ window.openme = function () {
       mainNav.classList.remove('open');
     }
   });
-  /* ─────────────────────────────────────────
-     3. HERO SLIDER — SLIDING ANIMATION
-  ───────────────────────────────────────── */
+  /*3. HERO SLIDER — SLIDING ANIMATION*/
 function initHeroSlider() {
   var slides  = document.querySelectorAll('.hero-slide');
   var current = 0;
@@ -89,9 +83,7 @@ function initHeroSlider() {
   function startTimer() { timer = setInterval(next, INTERVAL); }
   startTimer();
 }
-  /* ─────────────────────────────────────────
-     4. TRAILER — OPENS IN NEW WINDOW
-  ───────────────────────────────────────── */
+  /*4. TRAILER — OPENS IN NEW WINDOW*/
   window.openTrailer = function () {
     window.open('https://www.youtube.com/watch?v=9kb7vK11_Rw', '_blank');
   };
@@ -102,9 +94,7 @@ function initHeroSlider() {
       window.openTrailer();
     });
   }
-  /* ─────────────────────────────────────────
-     5. BACK TO TOP BUTTON
-  ───────────────────────────────────────── */
+  /* 5. BACK TO TOP BUTTON*/
   var pagetopBtn = document.getElementById('pagetop-btn');
   window.addEventListener('scroll', function () {
     if (window.scrollY > 400) {
@@ -116,9 +106,7 @@ function initHeroSlider() {
   pagetopBtn.addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-  /* ─────────────────────────────────────────
-     6. HEADER SCROLL STYLE
-  ───────────────────────────────────────── */
+  /*6. HEADER SCROLL STYLE*/
   var siteHeader = document.getElementById('site-header');
   window.addEventListener('scroll', function () {
     if (window.scrollY > 80) {
